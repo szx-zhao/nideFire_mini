@@ -37,7 +37,7 @@
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "仿网易严选",
+    "navigationBarTitleText": "消防素材库",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
@@ -57,7 +57,7 @@
         "pagePath": "pages/topic/topic",
         "iconPath": "static/images/ic_menu_topic_nor.png",
         "selectedIconPath": "static/images/ic_menu_topic_pressed.png",
-        "text": "专题"
+        "text": "专题教育"
       },
       {
         "pagePath": "pages/catalog/catalog",
@@ -69,7 +69,7 @@
         "pagePath": "pages/cart/cart",
         "iconPath": "static/images/ic_menu_shoping_nor.png",
         "selectedIconPath": "static/images/ic_menu_shoping_pressed.png",
-        "text": "购物车"
+        "text": "选购意向"
       },
       {
         "pagePath": "pages/ucenter/index/index",

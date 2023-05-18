@@ -43,7 +43,7 @@ Page({
         that.setData({
           historyKeyword: res.data.historyKeywordList,
           defaultKeyword: res.data.defaultKeyword,
-          hotKeyword: res.data.hotKeywordList
+          hotKeyword: res.data.hotKeywordList    //高频搜索
         });
       }
     });

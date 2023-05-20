@@ -24,6 +24,10 @@ Page({
     hasCollectImage: "/static/images/icon_collect_checked.png",
     collectBackImage: "/static/images/icon_collect.png"
   },
+
+//goods 这个变量来自数据绑定,说明 goods 数据的来源于某个地方,很可能是请求后端 API 获取的。
+// 在 getGoodsInfo 方法中,请求 GoodDetails API 获取产品详情数据:
+
   getGoodsInfo: function () {
     let that = this;
     util.request(api.GoodsDetail, { id: that.data.id }).then(function (res) {

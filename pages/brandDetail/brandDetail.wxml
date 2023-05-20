@@ -17,10 +17,11 @@
     <view class="cate-item">
         <view class="b">
             <block wx:for="{{goodsList}}" wx:for-index="iindex" wx:for-item="iitem">
+          <!-- 跳转到商品细节页面 -->
             <navigator class="item {{iindex % 2 == 0 ? 'item-b' : ''}}" url="../goods/goods?id={{iitem.id}}">
                 <image class="img" src="{{iitem.list_pic_url}}" background-size="cover"></image>
                 <text class="name">{{iitem.name}}</text>
-                <text class="price">{{iitem.retail_price}}</text>
+                <text class="price">存量：{{iitem.goods_number}}</text>
             </navigator>
             </block>
         </view>

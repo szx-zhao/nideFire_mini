@@ -1,4 +1,6 @@
 const ApiRootUrl = 'http://127.0.0.1:8360/api/';
+// 定义了一个名为ApiRootUrl的常量，这个常量被用来构建一系列API接口的URL。
+
 
 module.exports = {
   IndexUrl: ApiRootUrl + 'index/index', //首页数据接口

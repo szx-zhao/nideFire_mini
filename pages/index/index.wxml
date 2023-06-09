@@ -33,7 +33,7 @@
       </view>
     </view>
   </view>
-  <view class="a-section a-new" wx:if="{{newGoods.length > 0}}">
+  <!-- <view class="a-section a-new" wx:if="{{newGoods.length > 0}}">
     <view class="h">
       <view>
         <navigator url="../newGoods/newGoods">
@@ -50,7 +50,8 @@
         </navigator>
       </view>
     </view>
-  </view>
+  </view> -->
+  
   <view class="a-section a-popular" wx:if="{{hotGoods.length > 0}}">
     <view class="h">
       <view>
@@ -67,7 +68,7 @@
             <view class="text">
               <text class="name">{{item.name}}</text>
               <text class="desc">{{item.goods_brief}}</text>
-              <text class="price">￥{{item.retail_price}}</text>
+              <text class="price">存量{{item.goods_number}}</text>
             </view>
           </view>
         </navigator>
@@ -78,7 +79,7 @@
     <view class="h">
       <view>
         <navigator url="../topic/topic" open-type="switchTab">
-          <text class="txt">专题精选</text>
+          <text class="txt">专题教育</text>
         </navigator>
       </view>
     </view>
@@ -89,7 +90,7 @@
             <image class="img" src="{{item.scene_pic_url}}" background-size="cover"></image>
             <view class="np">
               <text class="name">{{item.title}}</text>
-              <text class="price">￥{{item.price_info}}元起</text>
+              <!-- <text class="price">￥{{item.price_info}}元起</text> -->
             </view>
             <text class="desc">{{item.subtitle}}</text>
           </navigator>
@@ -97,7 +98,8 @@
       </scroll-view>
     </view>
   </view>
-  <view class="good-grid" wx:for="{{floorGoods}}" wx:key="{{item.id}}">
+
+  <!-- <view class="good-grid" wx:for="{{floorGoods}}" wx:key="{{item.id}}">
     <view class="h">
       <view>
         <text>{{item.name}}</text>
@@ -112,5 +114,6 @@
         </navigator>
       </block>
     </view>
-  </view>
+  </view> -->
+
 </view>

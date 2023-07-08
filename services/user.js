@@ -8,6 +8,9 @@ const api = require('../config/api.js');
 
 /**
  * 调用微信登录
+ * 
+ * loginByWeixin函数通过调用微信登录API，获取用户信息和登录凭证，然后将这些信息发送到远程服务器进行验证。
+ * 如果验证成功，用户信息和token将被存储在本地缓存中，并通过resolve返回。如果验证失败，将通过reject返回错误信息。
  */
 function loginByWeixin() {
 
@@ -39,6 +42,8 @@ function loginByWeixin() {
 
 /**
  * 判断用户是否登录
+ * 
+ * 如果已经登录，则通过resolve返回true，否则通过reject返回false。
  */
 function checkLogin() {
   return new Promise(function (resolve, reject) {
@@ -58,6 +63,7 @@ function checkLogin() {
 
 
 module.exports = {
+  //通过module.exports导出，以便在其他文件中使用。 
   loginByWeixin,
   checkLogin,
 };

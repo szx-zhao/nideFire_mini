@@ -1,4 +1,6 @@
 var api = require('../../../config/api.js');
+//注册功能
+
 var app = getApp();
 Page({
   data: {

@@ -37,7 +37,7 @@
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "消防素材库",
+    "navigationBarTitleText": "消防器材库",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },

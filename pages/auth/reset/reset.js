@@ -1,4 +1,6 @@
 var app = getApp();
+//重置用户密码
+
 Page({
   data: {
     username: '',

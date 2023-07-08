@@ -1,5 +1,6 @@
 var util = require('../../utils/util.js');
 var api = require('../../config/api.js');
+//展示某个品牌的详细信息和该品牌下的商品列表
 
 
 var app = getApp();
@@ -21,6 +22,9 @@ Page({
     this.getBrand();
   },
   getBrand: function () {
+    /**
+     * 在页面初始化时，会从跳转参数中获取品牌id并存储到data中，然后调用getBrand函数获取该品牌的详细信息并存储到data中的brand属性中。
+     */
     let that = this;
     util.request(api.BrandDetail, { id: that.data.id }).then(function (res) {
       if (res.errno === 0) {
@@ -33,6 +37,9 @@ Page({
     });
   },
   getGoodsList() {
+    /**
+     * 在获取品牌信息成功后，会调用getGoodsList函数获取该品牌下的商品列表并存储到data中的goodsList属性中。
+     */
     var that = this;
 
     util.request(api.GoodsList, { brandId: that.data.id, page: that.data.page, size: that.data.size})
@@ -61,3 +68,8 @@ Page({
 
   }
 })
+
+/**
+ * 其中，util和api是引入的工具类和接口配置文件，getApp()用于获取全局应用程序实例。
+ * 其他生命周期函数onReady、onShow、onHide和onUnload暂时没有实现任何逻辑。 
+ */

@@ -100,7 +100,7 @@
     </view>
   </view>
 
-  <view class="related-goods" wx:if="{{relatedGoods.length > 0}}">
+  <!-- <view class="related-goods" wx:if="{{relatedGoods.length > 0}}">
     <view class="h">
       <view class="line"></view>
       <text class="title">大家都在看</text>
@@ -114,7 +114,10 @@
         </navigator>
       </view>
     </view>
-  </view>
+  </view> -->
+
+
+
 </view>
 <view class="attr-pop-box" hidden="{{!openAttr}}">
   <view class="attr-pop">
